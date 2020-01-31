@@ -6,8 +6,8 @@ class Input extends StatelessWidget {
   var ctrl = new MoneyMaskedTextController();
 
   Input({
-    @required this.label, 
-    @required this.ctrl
+    @required this.label,
+    @required this.ctrl,
   });
 
   @override
@@ -22,11 +22,13 @@ class Input extends StatelessWidget {
             style: TextStyle(
               color: Colors.white,
               fontSize: 35,
-              fontFamily: "Big Shoulders Display"
+              fontFamily: "Big Shoulders Display",
             ),
           ),
         ),
-        SizedBox(width: 20),
+        SizedBox(
+          width: 20,
+        ),
         Expanded(
           child: TextFormField(
             controller: ctrl,
@@ -40,7 +42,7 @@ class Input extends StatelessWidget {
               border: InputBorder.none,
             ),
           ),
-        )
+        ),
       ],
     );
   }
